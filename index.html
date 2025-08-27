@@ -5,48 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profil Ahmad Ayik Rifai</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
-      background: #f4f4f9;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f6f9;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: #2c3e50;
+      background: linear-gradient(135deg, #2c3e50, #34495e);
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 60px 20px;
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
     }
     header h1 {
-      margin: 0;
       font-size: 2.5em;
+      margin-bottom: 10px;
     }
     header p {
-      margin-top: 10px;
       font-size: 1.2em;
+      opacity: 0.9;
     }
     .container {
       max-width: 900px;
       margin: 30px auto;
       padding: 20px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    h2 {
-      border-bottom: 2px solid #2c3e50;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
     }
     .section {
-      margin-bottom: 30px;
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
     }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #2c3e50;
-      color: white;
-      margin-top: 40px;
+    h2 {
+      margin-bottom: 15px;
+      color: #2c3e50;
+      border-left: 4px solid #2980b9;
+      padding-left: 10px;
+    }
+    ul {
+      list-style: none;
+    }
+    ul li {
+      margin-bottom: 8px;
+      padding-left: 15px;
+      position: relative;
+    }
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #27ae60;
     }
     a {
       color: #2980b9;
@@ -55,21 +76,29 @@
     a:hover {
       text-decoration: underline;
     }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #2c3e50;
+      color: white;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
   <header>
+    <img src="foto.jpg" alt="Foto Profil">
     <h1>Ahmad Ayik Rifai</h1>
-    <p>Programmer JAVA | Android Developer | Tech Enthusiast</p>
+    <p>Programmer Android | Web Developer | Tech Enthusiast</p>
   </header>
 
   <div class="container">
     <div class="section">
       <h2>Tentang Saya</h2>
       <p>
-        Halo, saya <b>Ahmad Ayik Rifai</b>. Seorang programmer Android dan web developer 
-        yang suka membangun aplikasi dan website. Senang belajar teknologi baru 
-        dan berbagi pengetahuan.
+        Halo, saya <b>Ahmad Ayik Rifai</b>. Seorang programmer Android dan java developer 
+        yang suka membangun aplikasi. Saya senang mempelajari teknologi baru 
+        dan berbagi pengetahuan dengan komunitas.
       </p>
     </div>
 
@@ -77,9 +106,9 @@
       <h2>Keahlian</h2>
       <ul>
         <li>Android Development (Java, Kotlin, MVVM, Retrofit)</li>
-        <li>Web Development (HTML, CSS, JavaScript)</li>
+        <li>Web Development (HTML, CSS, JavaScript, React)</li>
         <li>Backend API (PHP, Node.js)</li>
-        <li>Database (MySQL, SQLite, Firebase)</li>
+        <li>Database (MySQL, SQLite, Firebase, PostgreSQL)</li>
       </ul>
     </div>
 
@@ -87,6 +116,7 @@
       <h2>Kontak</h2>
       <p>Email: <a href="mailto:ayik@example.com">ayik@example.com</a></p>
       <p>GitHub: <a href="https://github.com/ahmadayikrifai" target="_blank">github.com/ahmadayikrifai</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/ahmadayikrifai" target="_blank">linkedin.com/in/ahmadayikrifai</a></p>
     </div>
   </div>
 
