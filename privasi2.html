@@ -1,22 +1,144 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kebijakan Privasi 2</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kebijakan Privasi - Password Manager</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 20px; }
-    .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
-    h1 { color: #2c3e50; }
-    p { margin-bottom: 15px; }
-    a { color: #2980b9; }
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --accent:#2c3e50;
+      --muted:#6b7280;
+      --maxw:900px;
+    }
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background:var(--bg);
+      color:#111827;
+      margin:0;
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    header{
+      background:linear-gradient(90deg,var(--accent),#34495e);
+      color:white;
+      padding:48px 20px;
+      text-align:center;
+    }
+    header h1{margin:0 0 6px;font-size:1.6rem;}
+    header p{margin:0;opacity:.92}
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:0 16px;}
+    .card{
+      background:var(--card);
+      border-radius:10px;
+      padding:22px;
+      box-shadow:0 6px 18px rgba(15,23,42,0.06);
+      margin-bottom:18px;
+    }
+    h2{color:var(--accent);margin-top:0}
+    p.lead{color:var(--muted);margin-top:6px}
+    ul{margin-left:1.1rem}
+    footer{max-width:var(--maxw);margin:12px auto 40px;padding:0 16px;text-align:center;color:var(--muted);font-size:.95rem}
+    a{color:#0b72b9;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .meta{font-size:.95rem;color:var(--muted);margin-bottom:10px}
+    @media (max-width:520px){
+      header{padding:36px 12px}
+      .card{padding:16px}
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Kebijakan Privasi 2</h1>
-    <p>Ini adalah contoh isi kebijakan privasi 2. Kamu bisa isi sesuai kebutuhan aplikasi atau website kamu.</p>
-    <p><a href="privasi.html">← Kembali ke Daftar Kebijakan</a></p>
-  </div>
+  <header>
+    <h1>Kebijakan Privasi</h1>
+    <p>Policy untuk aplikasi <strong>Password Manager</strong></p>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="meta">Terakhir diperbarui: <strong>(tanggal isi sendiri)</strong></div>
+
+      <p class="lead">
+        Aplikasi <strong>Password Manager</strong> menghargai privasi Anda. Dokumen ini menjelaskan bagaimana data ditangani.
+      </p>
+
+      <h2>1. Informasi yang Disimpan</h2>
+      <p>
+        Aplikasi ini <strong>tidak</strong> mengirimkan data pribadi Anda ke server pihak ketiga secara default.
+        Semua data akun (nama akun, username/email, kata sandi, catatan) disimpan secara lokal di perangkat Anda dalam bentuk terenkripsi.
+      </p>
+
+      <h2>2. Penggunaan Informasi</h2>
+      <p>Data yang disimpan digunakan hanya untuk tujuan:</p>
+      <ul>
+        <li>Menyimpan dan menampilkan kredensial akun Anda.</li>
+        <li>Menghasilkan kata sandi kuat lewat fitur Password Generator.</li>
+        <li>Menyediakan impor/ekspor database terenkripsi antar perangkat bila diperlukan.</li>
+      </ul>
+
+      <h2>3. Enkripsi & Keamanan</h2>
+      <p>
+        Data disimpan dalam format terenkripsi (mis. AES) di perangkat. Akses data dilindungi oleh master password dan/atau biometrik jika diaktifkan.
+        Pengembang tidak dapat memulihkan data jika Anda lupa master password karena data tidak disimpan di server pengembang.
+      </p>
+
+      <h2>4. Izin & Akses</h2>
+      <p>
+        Aplikasi mungkin meminta izin terbatas (mis. akses penyimpanan) hanya untuk:
+      </p>
+      <ul>
+        <li>Menyimpan file database terenkripsi (ekspor/backup).</li>
+        <li>Mengimpor database dari lokasi penyimpanan.</li>
+      </ul>
+      <p>Izin tersebut <em>tidak</em> digunakan untuk mengumpulkan data pengguna.</p>
+
+      <h2>5. Sinkronisasi & Pihak Ketiga</h2>
+      <p>
+        Secara standar aplikasi tidak menggunakan layanan sinkronisasi cloud. Jika suatu fitur sinkronisasi diaktifkan (mis. integrasi dengan layanan cloud), Anda akan diminta persetujuan dan diinformasikan jenis data yang akan disinkronkan.
+      </p>
+
+      <h2>6. Cadangan & Pemulihan</h2>
+      <p>
+        Untuk mencegah kehilangan data, disarankan melakukan ekspor/backup database terenkripsi secara berkala. Pastikan backup disimpan di tempat yang aman.
+      </p>
+
+      <h2>7. Batasan Tanggung Jawab</h2>
+      <p>
+        Pengembang berupaya menjaga keamanan aplikasi, namun pengguna bertanggung jawab atas:
+      </p>
+      <ul>
+        <li>Mengamankan master password.</li>
+        <li>Menyimpan backup pada lokasi yang aman.</li>
+        <li>Menggunakan versi terbaru aplikasi dan sistem operasi.</li>
+      </ul>
+
+      <h2>8. Perubahan Kebijakan</h2>
+      <p>
+        Kebijakan ini dapat diperbarui dari waktu ke waktu. Perubahan akan diinformasikan melalui pembaruan aplikasi atau pada halaman ini. Silakan periksa tanggal "Terakhir diperbarui".
+      </p>
+
+      <h2>9. Kontak</h2>
+      <p>
+        Jika ada pertanyaan mengenai Kebijakan Privasi ini, silakan hubungi:
+      </p>
+      <ul>
+        <li>Email: <a href="mailto:developer@example.com">developer@example.com</a> (ganti dengan email Anda)</li>
+        <li>Situs web: <a href="https://example.com" target="_blank" rel="noopener noreferrer">https://example.com</a> (opsional)</li>
+      </ul>
+
+      <p style="margin-top:12px"><a href="index.html">← Kembali ke Halaman Utama</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Password Manager — Semua hak dilindungi.
+  </footer>
+
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
